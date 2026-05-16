@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
-const mascotasRoutes = require('./routes/mascotasRoutes');
+const clientesRoutes = require('./routes/clientesRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +13,7 @@ app.use(cors());   // Permite peticiones cruzadas
 app.use(express.json()); // Permite recibir JSON en el body
 
 // 2. Rutas de la API
-app.use('/api', mascotasRoutes);
+app.use('/api', clientesRoutes);
 
 // 3. Levantar el servidor
 app.listen(PORT, () => {
