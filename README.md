@@ -19,4 +19,4 @@ Esta es una API desarrollada con Node.js y Express para la gestión de clientes 
 1. Clonar el repositorio.
 2. Instalar dependencias: npm install
 3. Crear un archivo .env basado en las necesidades del proyecto (ej: DATABASE_URL, PORT).
-4. Iniciar el servidor: npm start.
+4. Iniciar el servidor: npm run dev.
